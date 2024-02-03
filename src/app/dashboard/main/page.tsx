@@ -1,4 +1,5 @@
-import { SimpleWidget } from '../../../components/SimpleWidget';
+import { WidgetsGrid } from '@/components';
+import { SimpleWidget } from '../../../components/dashboard/SimpleWidget';
 
 
 export const metadata = {
@@ -12,9 +13,7 @@ export default function MainPage() {
       <h1 className="mt-2 text-3xl">Dashboard</h1>
       <span className="text-xl">Información general</span>
 
-      <div className="flex flex-wrap p-2 items-center justify-center">
-        <SimpleWidget />
-      </div>
+      <WidgetsGrid />
     </div>
   );
 }
